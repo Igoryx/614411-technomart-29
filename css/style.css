@@ -1,0 +1,384 @@
+/* Variables */
+
+:root {
+  --basic-white: #fff;
+  --basic-logo-red: #EE3643;
+  --basic-extra-dark-blue: #293449;
+  --basic-green: #63A63E;
+  --basic-light-gray: #F3F7F9;
+  --basic-dark-blue: #32425C;
+  --basic-black: #000;
+  --basic-gray: #C5C5C5;
+  --basic-2gray: #B7BFC8;
+  --basic-yellow: #FFBF47;
+  --basic-light-blue: #3BBCE3;
+  --basic-purple: #DC91D8;
+  --basic-light-green: #8ED78F;
+  --basic-2yellow: #FFC047;
+  --basic-light-brown: #F9F5F0;
+  --basic-2light-gray: #F1F5F7;
+
+  --special-green: #5FBB2D;
+  --special-darkest-blue: #161D29;
+  --special-dark-blue: #293449;
+  --special-red-click: #BA2732;
+  --special-red-hover: #CA2C37;
+  --special-yellow: #FFBF47;
+  --special-2yellow: #FFD180;
+  --special-gray: #A9A9A9;
+  --special-light-gray-frame: #EAEAEA;
+  --special-green-click: #518534;
+  --special-light-brown: #F7F3EC;
+  --special-2light-gray: #E5E5E5;
+  --special-dark-gray: #B5B5B5;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  background-color: var(--basic-light-gray);
+  min-height: 320px;
+}
+
+.statusbar-wrapper {
+  min-height: 42px;
+  background-color: var(--special-dark-blue);
+}
+
+.statusbar-wrapper a {
+  color: var(--basic-white);
+}
+
+.main-header-heading {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  font-weight: normal;
+  color: var(--basic-logo-red);
+}
+
+.main-header-contacts p {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-logo-red);
+}
+
+.main-header-contacts address {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--basic-dark-blue);
+}
+
+.login-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: var(--basic-dark-blue);
+  min-height: 60px;
+  min-width: 940px;
+}
+
+.site-navigation-link a {
+  color: var(--basic-white);
+}
+
+/* options */
+
+.options-item {
+  width: 300px;
+  min-height: 123px;
+}
+
+.options-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.options-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.options-item:first-child {
+  background-color: var(--basic-yellow);
+}
+
+.options-item:nth-child(2) {
+  background-color: var(--basic-light-blue);
+}
+
+.options-item:nth-child(3) {
+  background-color: var(--basic-purple);
+}
+
+.options-item:nth-child(4) {
+  background-color: var(--basic-light-green);
+}
+
+.options-item:last-child {
+  background-color: var(--basic-2yellow);
+}
+
+/* slider */
+
+.slider {
+  width: 620px;
+  height: 266px;
+  background-color: #74726F;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.slider h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-wrapper {
+  background-color: var(--basic-logo-red);
+  min-height: 38px;
+  text-align: center;
+  width: 192px;
+}
+
+.link-button {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* popular goods */
+
+.popular-goods {
+  min-width: 940px;
+}
+
+.section-headings {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popular-heading-wrapper h2 {
+  color: var(--special-dark-blue);
+}
+
+.popular-heading-wrapper {
+  background-color: var(--basic-light-brown);
+}
+
+.popular-goods-item {
+  min-width: 220px;
+  min-height: 318px;
+}
+
+.popular-goods-item p {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.past-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--special-gray);
+  text-decoration: line-through;
+}
+
+.actual-price {
+  background-color: var(--basic-logo-red);
+  color: var(--basic-white);
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* popular brands */
+
+.popular-brands-item {
+  width: 220px;
+  height: 145px;
+  border: solid 1px var(--special-light-gray-frame);
+}
+
+/* services */
+
+.services {
+  background-color:
+  var(--basic-2light-gray);
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.description-text {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PT Sans;
+  color: var(--basic-black);
+}
+
+.services-item span {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--special-dark-blue);
+}
+
+.services-item h3 {
+  color: var(--special-dark-blue);
+}
+
+/* about-us */
+
+.about-us h2 {
+  color: var(--basic-black);
+}
+
+.about-us-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+
+/* contacts */
+
+.contacts h2 {
+  color: var(--basic-black);
+}
+
+.write-us-button {
+  background-color: var(--basic-logo-red);
+  min-height: 38px;
+  text-align: center;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* footer */
+
+.page-footer {
+  background-color: var(--basic-dark-blue);
+}
+
+.footer-contacts address {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-options-list a {
+  color: var(--special-2yellow);
+
+}
+
+
+
+.end-footer-block {
+  background-color: var(--basic-extra-dark-blue);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+/* footer-copyright */
+
+.footer-copyright p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-contact-us a {
+color: var(--special-2yellow);
+}
+
+
+/* modal */
+
+.modal label {
+  color: var(--basic-black);
+}
+
+.email-form input::placeholder {
+  color: var(--special-gray);
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.submit-button {
+  background-color: var(--basic-logo-red);
+  min-height: 38px;
+  text-align: center;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+}
